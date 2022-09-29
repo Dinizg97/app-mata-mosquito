@@ -4,7 +4,7 @@ var altura = 0
 var largura = 0
 var vidas = 1
 var tempo = 30
-
+var score = 0
 var criaMosquitoTempo = 1500
 
 var nivel = window.location.search
@@ -44,6 +44,7 @@ var cronometro = setInterval(function(){
 } , 2000)
     
 
+document.getElementById('pontuacao').innerHTML = score
 
 function posicaoRandomica(){ 
 
@@ -82,6 +83,10 @@ mosquito.style.position = 'absolute'
 mosquito.id = 'mosquito'
 mosquito.onclick = function () {
     this.remove()
+    score += 1
+    
+    document.getElementById('pontuacao').innerHTML = score
+    
 
 }
 
