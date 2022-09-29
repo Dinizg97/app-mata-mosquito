@@ -66,7 +66,7 @@ background-size: 1920px 975px;
 
 .painel2{
     position: absolute;
-    width: 110px;
+    width: 150px;
     padding: 10px;
     top: 0px;
     right: 0px;
@@ -74,4 +74,8 @@ background-size: 1920px 975px;
     background-color: #fff;
     opacity: 0.7;
 
+}
+.score{
+    font-size: 25px;
+    font-weight: bold;
 }
