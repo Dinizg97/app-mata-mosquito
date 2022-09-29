@@ -19,53 +19,34 @@
     <link rel="stylesheet" href="../estilo.css/estilo.css" type="text/css">
    
     
-     <title>JavaScript</title>
+     <title>Vitória</title>
    </head>
   
-   <body onresize="ajustaTamanhoPalcoJogo()">
+   <body >
 
-    <div class="painel">
-      
-      <div class="vidas">
-        
-        <img id="v1" src="../imagens/coracao_cheio.png" alt="">
-        <img id="v2" src="../imagens/coracao_cheio.png" alt="">
-        <img id="v3" src="../imagens/coracao_cheio.png" alt="">
+    <div class="container">
+        <div class="row">   
+            <div class="col">
+                <div class="d-flex justify-content-center">   
+                <img src="../imagens/vitoria.png" alt="">
 
-      </div>
-      
-      <div class="cronometro">
-      
-        Tempo Restante: <span id="cronometro"></span>
-      
-      </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">   
+            <div class="col">
+                <div class="d-flex justify-content-center">   
+                   
+                    <button class="btn btn-success btn-lg Botao" onclick="window.location.href= 'index.html' ">  <!-- Alterar LOCATION para index.html -->
+                        Reiniciar
+                    </button>
+                
+                </div>
+            </div>
+        </div>
     </div>
-
-   <!-- <div class="painel2">
-      
-      <div class="score">
-      
-        Score: <span id="pontuacao"></span>
-      
-      </div>
-
-    </div> -->
-
-   <script>
-   
-   document.getElementById('cronometro').innerHTML = tempo
-  
-
-       var criarMosca = setInterval(function() {
-        posicaoRandomica()
-        }, criaMosquitoTempo )
-       
-       
-    </script>
-   
-
-
+    
    
 
     
