@@ -57,7 +57,7 @@ if ( document.getElementById('mosquito') ){
         window.location.href = 'fim_de_jogo.html'
     }
     
-    else { document.getElementById('v' + vidas).src = "imagens/coracao_vazio.png"
+    else { document.getElementById('v' + vidas).src = "..imagens/coracao_vazio.png"
     
         vidas ++
      }
@@ -75,7 +75,7 @@ posicaoY = posicaoY < 0 ? 0 : posicaoY
 // criar o Elemento HTML
 
 var mosquito = document.createElement('img')
-mosquito.src = 'imagens/mosca.png'
+mosquito.src = '..imagens/mosca.png'
 mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
 mosquito.style.left = posicaoX + 'px'
 mosquito.style.top = posicaoY + 'px'
